@@ -77,7 +77,11 @@ if __name__ == "__main__":
             webbrowser.open("google.com")
 
         elif 'open stackoverflow' in query:
-            webbrowser.open("stackoverflow.com")   
+            webbrowser.open("stackoverflow.com") 
+        
+        elif 'search for me jarvis' in query:
+            searchRequest = takeCommand()
+            webbrowser.open(f"https://www.google.com/search?q={searchRequest}")
 
 
         elif 'play music' in query:
